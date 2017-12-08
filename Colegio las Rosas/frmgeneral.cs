@@ -9,15 +9,15 @@ using System.Windows.Forms;
 
 namespace Colegio_las_Rosas
 {
-    public partial class l : Form
+    public partial class frmgeneral : Form
     {
-        public l()
+        public frmgeneral()
         {
             InitializeComponent();
             pictureBox1.Image = Image.FromFile("CLRlogo.png");
         }
 
-        private void l_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
