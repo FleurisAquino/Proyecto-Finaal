@@ -15,7 +15,7 @@ namespace Colegio_las_Rosas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmgeneral());
+            Application.Run(new frmlogin());
         }
     }
 }

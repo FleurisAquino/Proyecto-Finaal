@@ -1,6 +1,6 @@
 ﻿namespace Colegio_las_Rosas
 {
-    partial class l
+    partial class frmlogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbususrio = new System.Windows.Forms.TextBox();
+            this.tbusuario = new System.Windows.Forms.TextBox();
             this.tbcontracena = new System.Windows.Forms.TextBox();
             this.btnentrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,28 +37,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tbususrio
+            // tbusuario
             // 
-            this.tbususrio.Location = new System.Drawing.Point(134, 259);
-            this.tbususrio.Name = "tbususrio";
-            this.tbususrio.Size = new System.Drawing.Size(170, 20);
-            this.tbususrio.TabIndex = 0;
+            this.tbusuario.Location = new System.Drawing.Point(132, 312);
+            this.tbusuario.Name = "tbusuario";
+            this.tbusuario.Size = new System.Drawing.Size(170, 20);
+            this.tbusuario.TabIndex = 0;
             // 
             // tbcontracena
             // 
-            this.tbcontracena.Location = new System.Drawing.Point(134, 312);
+            this.tbcontracena.Location = new System.Drawing.Point(132, 259);
             this.tbcontracena.Name = "tbcontracena";
             this.tbcontracena.Size = new System.Drawing.Size(170, 20);
             this.tbcontracena.TabIndex = 1;
             // 
             // btnentrar
             // 
-            this.btnentrar.Location = new System.Drawing.Point(181, 363);
+            this.btnentrar.Location = new System.Drawing.Point(151, 364);
             this.btnentrar.Name = "btnentrar";
-            this.btnentrar.Size = new System.Drawing.Size(75, 23);
+            this.btnentrar.Size = new System.Drawing.Size(130, 34);
             this.btnentrar.TabIndex = 2;
             this.btnentrar.Text = "Entrar";
             this.btnentrar.UseVisualStyleBackColor = true;
+            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
             // 
             // label1
             // 
@@ -67,9 +68,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(32, 259);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Usurio";
+            this.label1.Text = "Usuario";
             // 
             // label2
             // 
@@ -92,7 +93,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.l_Load);
             // 
-            // l
+            // frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,8 +103,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.tbcontracena);
-            this.Controls.Add(this.tbususrio);
-            this.Name = "l";
+            this.Controls.Add(this.tbusuario);
+            this.Name = "frmlogin";
             this.Text = "Las Rosas";
             this.Load += new System.EventHandler(this.l_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -114,7 +115,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbususrio;
+        private System.Windows.Forms.TextBox tbusuario;
         private System.Windows.Forms.TextBox tbcontracena;
         private System.Windows.Forms.Button btnentrar;
         private System.Windows.Forms.Label label1;
