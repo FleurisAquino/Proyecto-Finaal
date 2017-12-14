@@ -84,6 +84,7 @@
             this.tbMnombre = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.tbMcodigo = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -275,6 +276,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.comboBox3);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.btAguardar);
@@ -383,9 +385,9 @@
             // 
             // tbFKPcodigo
             // 
-            this.tbFKPcodigo.Location = new System.Drawing.Point(120, 215);
+            this.tbFKPcodigo.Location = new System.Drawing.Point(114, 215);
             this.tbFKPcodigo.Name = "tbFKPcodigo";
-            this.tbFKPcodigo.Size = new System.Drawing.Size(61, 20);
+            this.tbFKPcodigo.Size = new System.Drawing.Size(34, 20);
             this.tbFKPcodigo.TabIndex = 14;
             // 
             // btAguardar
@@ -507,9 +509,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(375, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.Size = new System.Drawing.Size(176, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Alumno";
+            this.label1.Text = "Información del Alumno";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -528,9 +530,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(11, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 20);
+            this.label3.Size = new System.Drawing.Size(197, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Padres o Tutores ";
+            this.label3.Text = "Información de los Padres ";
             // 
             // label21
             // 
@@ -631,7 +633,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(182, 218);
+            this.label27.Location = new System.Drawing.Point(191, 218);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(99, 13);
             this.label27.TabIndex = 17;
@@ -640,10 +642,20 @@
             // 
             // tbMcodigo
             // 
-            this.tbMcodigo.Location = new System.Drawing.Point(283, 215);
+            this.tbMcodigo.Location = new System.Drawing.Point(293, 215);
             this.tbMcodigo.Name = "tbMcodigo";
-            this.tbMcodigo.Size = new System.Drawing.Size(61, 20);
+            this.tbMcodigo.Size = new System.Drawing.Size(34, 20);
             this.tbMcodigo.TabIndex = 16;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(274, 163);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 22);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmInscrip
             // 
@@ -731,5 +743,6 @@
         private System.Windows.Forms.TextBox tbMnombre;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox tbMcodigo;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -14,11 +14,23 @@ namespace Colegio_las_Rosas
         public frmRegistros()
         {
             InitializeComponent();
+            pbinscripcion.Image = Image.FromFile("Formulario_Inscripción.png");
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void frmRegistros_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbinscripcion_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmInscrip();
+            frm.Show();
         }
     }
 }

@@ -58,5 +58,10 @@ namespace Colegio_las_Rosas
                 tbMcodigo.Text = fila["codigo"].ToString();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
