@@ -42,9 +42,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pbFinanzas = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbinscripcion = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -53,7 +54,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFinanzas)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbinscripcion)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -192,21 +193,23 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.pbinscripcion);
             this.panel4.Location = new System.Drawing.Point(241, 264);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(201, 180);
             this.panel4.TabIndex = 3;
             // 
-            // pictureBox2
+            // pbinscripcion
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(148, 141);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pbinscripcion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbinscripcion.Location = new System.Drawing.Point(26, 2);
+            this.pbinscripcion.Name = "pbinscripcion";
+            this.pbinscripcion.Size = new System.Drawing.Size(148, 141);
+            this.pbinscripcion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbinscripcion.TabIndex = 1;
+            this.pbinscripcion.TabStop = false;
+            this.pbinscripcion.Click += new System.EventHandler(this.pbinscripcion_Click);
             // 
             // panel5
             // 
@@ -225,6 +228,16 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Adobe Garamond Pro", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 146);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(163, 27);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "INSCRIPCCION";
             // 
             // frmgeneral
             // 
@@ -252,7 +265,8 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFinanzas)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbinscripcion)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -277,7 +291,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbFinanzas;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbinscripcion;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label4;
     }
 }

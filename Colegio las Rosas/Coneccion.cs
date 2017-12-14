@@ -11,7 +11,7 @@ namespace Colegio_las_Rosas
     class Coneccion
     {
         SQLiteConnection cnx;
-        //SQLiteCommand cmd;
+        SQLiteCommand cmd;
 
         public Coneccion()
         {
@@ -20,8 +20,6 @@ namespace Colegio_las_Rosas
 
             {
                 cnx.Open();
-
-                MessageBox.Show("Conectado A Base de Datos");
             }
             catch (Exception ex)
             {
@@ -33,41 +31,58 @@ namespace Colegio_las_Rosas
             }
 
         }
-        //public void Login(string sql)
-        //{
-        // cnx = new SQLiteConnection("Data Source = C:\\SQLite\\LasRosas.db;Vercion=3;");
-        // try
-        //  {
-        // cnx.Open();
-        //cmd = new SQLiteCommand(sql, cnx);
-        //cmd.ExecuteNonQuery();
-        // MessageBox.Show("Guardado");
-        //  }
-        // catch (Exception ex)
-        //{
-        //  MessageBox.Show("Error" + ex.ToString());
-        // }
+        public void Login(string sql)
+        {
+        cnx = new SQLiteConnection("Data Source = C:\\SQLite\\LasRosas.db;Vercion=3;");
+        try
+        {
+        cnx.Open();
+        cmd = new SQLiteCommand(sql, cnx);
+        cmd.ExecuteNonQuery();
+        MessageBox.Show("Guardado");
+        }
+        catch (Exception ex)
+        {
+        MessageBox.Show("Error" + ex.ToString());
+        }
 
-        //}
+        }
 
-        //public DataSet MostrarData(string sql)    
-       // {
-            //cnx = new SQLiteConnection("Data Source = C:\\SQLite\\cnxpruva.db;Vercion=3;");
+        public DataSet MostrarData(string sql)    
+       {
+           cnx = new SQLiteConnection("Data Source = C:\\SQLite\\LasRosas.db;Vercion=3;");
 
-            //try
-            //{
-                //cnx.Open();
-                //DataSet dt = new DataSet();
-                //SQLiteDataAdapter adapter = new SQLiteDataAdapter(sql, cnx);
-                //adapter.Fill(dt);
-                //return dt;
-            //}
-            //catch (Exception ex)
-            //{
-               //MessageBox.Show("No se pudo" + ex.ToString());
-            //}
-            //return null;
-        //}
+            try
+            {
+                cnx.Open();
+                DataSet dt = new DataSet();
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter(sql, cnx);
+                adapter.Fill(dt);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show("No se pudo" + ex.ToString());
+            }
+            return null;
+        }
+        public string insertar(string sql)
+        {
+            cnx = new SQLiteConnection("Data Source = C:\\SQLite\\LasRosas.db;Vercion=3;");
+
+            try
+            {
+                cnx.Open();
+                cmd = new SQLiteCommand(sql, cnx);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Guardado");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("NO GUARDADO:" + ex.ToString());
+            }
+            return null;
+        }
 
     }
 }

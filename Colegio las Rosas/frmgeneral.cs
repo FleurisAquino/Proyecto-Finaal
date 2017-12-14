@@ -17,6 +17,7 @@ namespace Colegio_las_Rosas
             pictureBox1.Image = Image.FromFile("CLRlogo.png");
             pbregistro.Image = Image.FromFile("registro.png");
             pbFinanzas.Image = Image.FromFile("finanzas.png");
+            pbinscripcion.Image = Image.FromFile("Formulario_Inscripción.png");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -66,6 +67,12 @@ namespace Colegio_las_Rosas
                 MessageBox.Show("Cerrar La Sesion"+ex.ToString());
             }
             
+        }
+
+        private void pbinscripcion_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmInscrip();
+            frm.Show();
         }
     }
 }
