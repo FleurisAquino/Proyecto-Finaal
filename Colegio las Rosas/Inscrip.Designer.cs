@@ -29,11 +29,23 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbMcedula = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbMcelular = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.tbMdireccion = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.tbMtelefono = new System.Windows.Forms.TextBox();
+            this.tbMapellido = new System.Windows.Forms.TextBox();
+            this.tbMnombre = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.tbPcedula = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -47,14 +59,17 @@
             this.tbPapellido = new System.Windows.Forms.TextBox();
             this.tbPnombre = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.btAguardar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.tbMcodigo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tbFKPcodigo = new System.Windows.Forms.TextBox();
-            this.btAguardar = new System.Windows.Forms.Button();
             this.DTPfechanac = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.tbEdad = new System.Windows.Forms.TextBox();
@@ -70,21 +85,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.tbMcedula = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tbMcelular = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.tbMdireccion = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.tbMtelefono = new System.Windows.Forms.TextBox();
-            this.tbMapellido = new System.Windows.Forms.TextBox();
-            this.tbMnombre = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.tbMcodigo = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -105,6 +105,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(355, 470);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(10, 437);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 26);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Guardar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 
@@ -146,6 +156,102 @@
             this.panel5.Size = new System.Drawing.Size(344, 176);
             this.panel5.TabIndex = 1;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(14, 144);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(40, 13);
+            this.label21.TabIndex = 26;
+            this.label21.Text = "Cedula";
+            // 
+            // tbMcedula
+            // 
+            this.tbMcedula.Location = new System.Drawing.Point(115, 144);
+            this.tbMcedula.Name = "tbMcedula";
+            this.tbMcedula.Size = new System.Drawing.Size(160, 20);
+            this.tbMcedula.TabIndex = 25;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(14, 118);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(42, 13);
+            this.label22.TabIndex = 24;
+            this.label22.Text = "Celular ";
+            // 
+            // tbMcelular
+            // 
+            this.tbMcelular.Location = new System.Drawing.Point(115, 118);
+            this.tbMcelular.Name = "tbMcelular";
+            this.tbMcelular.Size = new System.Drawing.Size(160, 20);
+            this.tbMcelular.TabIndex = 23;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(14, 90);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(52, 13);
+            this.label23.TabIndex = 22;
+            this.label23.Text = "Direccion";
+            // 
+            // tbMdireccion
+            // 
+            this.tbMdireccion.Location = new System.Drawing.Point(115, 90);
+            this.tbMdireccion.Name = "tbMdireccion";
+            this.tbMdireccion.Size = new System.Drawing.Size(160, 20);
+            this.tbMdireccion.TabIndex = 21;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(14, 63);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(49, 13);
+            this.label24.TabIndex = 20;
+            this.label24.Text = "Telefono";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(14, 37);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(47, 13);
+            this.label25.TabIndex = 19;
+            this.label25.Text = "Apellido ";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(14, 15);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(44, 13);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "Nombre";
+            // 
+            // tbMtelefono
+            // 
+            this.tbMtelefono.Location = new System.Drawing.Point(115, 60);
+            this.tbMtelefono.Name = "tbMtelefono";
+            this.tbMtelefono.Size = new System.Drawing.Size(160, 20);
+            this.tbMtelefono.TabIndex = 17;
+            // 
+            // tbMapellido
+            // 
+            this.tbMapellido.Location = new System.Drawing.Point(115, 34);
+            this.tbMapellido.Name = "tbMapellido";
+            this.tbMapellido.Size = new System.Drawing.Size(160, 20);
+            this.tbMapellido.TabIndex = 16;
+            // 
+            // tbMnombre
+            // 
+            this.tbMnombre.Location = new System.Drawing.Point(115, 8);
+            this.tbMnombre.Name = "tbMnombre";
+            this.tbMnombre.Size = new System.Drawing.Size(160, 20);
+            this.tbMnombre.TabIndex = 15;
+            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -165,16 +271,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(344, 187);
             this.panel4.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(10, 437);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 26);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label20
             // 
@@ -287,6 +383,16 @@
             this.panel2.Size = new System.Drawing.Size(371, 192);
             this.panel2.TabIndex = 1;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(274, 163);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(90, 22);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
@@ -320,6 +426,16 @@
             this.label11.Size = new System.Drawing.Size(31, 13);
             this.label11.TabIndex = 14;
             this.label11.Text = "Aula ";
+            // 
+            // btAguardar
+            // 
+            this.btAguardar.Location = new System.Drawing.Point(41, 160);
+            this.btAguardar.Name = "btAguardar";
+            this.btAguardar.Size = new System.Drawing.Size(93, 25);
+            this.btAguardar.TabIndex = 6;
+            this.btAguardar.Text = "Guardar";
+            this.btAguardar.UseVisualStyleBackColor = true;
+            this.btAguardar.Click += new System.EventHandler(this.btConsul_Click);
             // 
             // label10
             // 
@@ -373,6 +489,23 @@
             this.panel3.Size = new System.Drawing.Size(371, 259);
             this.panel3.TabIndex = 2;
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(191, 218);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(99, 13);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "Codigo de la Madre";
+            this.label27.Visible = false;
+            // 
+            // tbMcodigo
+            // 
+            this.tbMcodigo.Location = new System.Drawing.Point(293, 215);
+            this.tbMcodigo.Name = "tbMcodigo";
+            this.tbMcodigo.Size = new System.Drawing.Size(34, 20);
+            this.tbMcodigo.TabIndex = 16;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -389,16 +522,6 @@
             this.tbFKPcodigo.Name = "tbFKPcodigo";
             this.tbFKPcodigo.Size = new System.Drawing.Size(34, 20);
             this.tbFKPcodigo.TabIndex = 14;
-            // 
-            // btAguardar
-            // 
-            this.btAguardar.Location = new System.Drawing.Point(41, 160);
-            this.btAguardar.Name = "btAguardar";
-            this.btAguardar.Size = new System.Drawing.Size(93, 25);
-            this.btAguardar.TabIndex = 6;
-            this.btAguardar.Text = "Guardar";
-            this.btAguardar.UseVisualStyleBackColor = true;
-            this.btAguardar.Click += new System.EventHandler(this.btConsul_Click);
             // 
             // DTPfechanac
             // 
@@ -534,129 +657,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Información de los Padres ";
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(14, 144);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(40, 13);
-            this.label21.TabIndex = 26;
-            this.label21.Text = "Cedula";
-            // 
-            // tbMcedula
-            // 
-            this.tbMcedula.Location = new System.Drawing.Point(115, 144);
-            this.tbMcedula.Name = "tbMcedula";
-            this.tbMcedula.Size = new System.Drawing.Size(160, 20);
-            this.tbMcedula.TabIndex = 25;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(14, 118);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(42, 13);
-            this.label22.TabIndex = 24;
-            this.label22.Text = "Celular ";
-            // 
-            // tbMcelular
-            // 
-            this.tbMcelular.Location = new System.Drawing.Point(115, 118);
-            this.tbMcelular.Name = "tbMcelular";
-            this.tbMcelular.Size = new System.Drawing.Size(160, 20);
-            this.tbMcelular.TabIndex = 23;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(14, 90);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(52, 13);
-            this.label23.TabIndex = 22;
-            this.label23.Text = "Direccion";
-            // 
-            // tbMdireccion
-            // 
-            this.tbMdireccion.Location = new System.Drawing.Point(115, 90);
-            this.tbMdireccion.Name = "tbMdireccion";
-            this.tbMdireccion.Size = new System.Drawing.Size(160, 20);
-            this.tbMdireccion.TabIndex = 21;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(14, 63);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 13);
-            this.label24.TabIndex = 20;
-            this.label24.Text = "Telefono";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(14, 37);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(47, 13);
-            this.label25.TabIndex = 19;
-            this.label25.Text = "Apellido ";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(14, 15);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(44, 13);
-            this.label26.TabIndex = 18;
-            this.label26.Text = "Nombre";
-            // 
-            // tbMtelefono
-            // 
-            this.tbMtelefono.Location = new System.Drawing.Point(115, 60);
-            this.tbMtelefono.Name = "tbMtelefono";
-            this.tbMtelefono.Size = new System.Drawing.Size(160, 20);
-            this.tbMtelefono.TabIndex = 17;
-            // 
-            // tbMapellido
-            // 
-            this.tbMapellido.Location = new System.Drawing.Point(115, 34);
-            this.tbMapellido.Name = "tbMapellido";
-            this.tbMapellido.Size = new System.Drawing.Size(160, 20);
-            this.tbMapellido.TabIndex = 16;
-            // 
-            // tbMnombre
-            // 
-            this.tbMnombre.Location = new System.Drawing.Point(115, 8);
-            this.tbMnombre.Name = "tbMnombre";
-            this.tbMnombre.Size = new System.Drawing.Size(160, 20);
-            this.tbMnombre.TabIndex = 15;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(191, 218);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(99, 13);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Codigo de la Madre";
-            this.label27.Visible = false;
-            // 
-            // tbMcodigo
-            // 
-            this.tbMcodigo.Location = new System.Drawing.Point(293, 215);
-            this.tbMcodigo.Name = "tbMcodigo";
-            this.tbMcodigo.Size = new System.Drawing.Size(34, 20);
-            this.tbMcodigo.TabIndex = 16;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(274, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 22);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Cerrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // frmInscrip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -670,6 +670,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmInscrip";
             this.Text = "Inscrip";
+            this.Load += new System.EventHandler(this.frmInscrip_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);

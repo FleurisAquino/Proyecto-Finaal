@@ -60,18 +60,18 @@ namespace Colegio_las_Rosas
             try
 
             {
-               this.Close();
+                this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Cerrar La Sesion"+ex.ToString());
+                MessageBox.Show("Cerrar La Sesion" + ex.ToString());
             }
-            
+
         }
 
         private void pbinscripcion_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void frmgeneral_Load(object sender, EventArgs e)
@@ -96,5 +96,11 @@ namespace Colegio_las_Rosas
             Form frm = new frmCrEmpleado();
             frm.Show();
         }
+  
     }
+
+       
 }
+
+
+    

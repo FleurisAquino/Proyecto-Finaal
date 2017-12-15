@@ -46,12 +46,12 @@
             this.tbapellido = new System.Windows.Forms.TextBox();
             this.tbnombre = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btcodCargo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tbsueldo = new System.Windows.Forms.TextBox();
             this.btdepar = new System.Windows.Forms.Button();
             this.tbDepart = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btcargo = new System.Windows.Forms.Button();
             this.tbCargo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.dtIngreso = new System.Windows.Forms.DateTimePicker();
@@ -226,12 +226,12 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btcodCargo);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.tbsueldo);
             this.panel1.Controls.Add(this.btdepar);
             this.panel1.Controls.Add(this.tbDepart);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.btcargo);
             this.panel1.Controls.Add(this.tbCargo);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.dtIngreso);
@@ -240,11 +240,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(626, 98);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btcodCargo
+            // 
+            this.btcodCargo.Location = new System.Drawing.Point(265, 55);
+            this.btcodCargo.Name = "btcodCargo";
+            this.btcodCargo.Size = new System.Drawing.Size(57, 20);
+            this.btcodCargo.TabIndex = 27;
+            this.btcodCargo.Text = "///";
+            this.btcodCargo.UseVisualStyleBackColor = true;
+            this.btcodCargo.Click += new System.EventHandler(this.btcodCargo_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(339, 20);
+            this.label8.Location = new System.Drawing.Point(369, 17);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 26;
@@ -265,6 +276,7 @@
             this.btdepar.TabIndex = 24;
             this.btdepar.Text = "///";
             this.btdepar.UseVisualStyleBackColor = true;
+            this.btdepar.Click += new System.EventHandler(this.btdepar_Click);
             // 
             // tbDepart
             // 
@@ -276,20 +288,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(336, 59);
+            this.label7.Location = new System.Drawing.Point(369, 59);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 13);
             this.label7.TabIndex = 22;
             this.label7.Text = "Departamento";
-            // 
-            // btcargo
-            // 
-            this.btcargo.Location = new System.Drawing.Point(257, 56);
-            this.btcargo.Name = "btcargo";
-            this.btcargo.Size = new System.Drawing.Size(57, 20);
-            this.btcargo.TabIndex = 21;
-            this.btcargo.Text = "///";
-            this.btcargo.UseVisualStyleBackColor = true;
             // 
             // tbCargo
             // 
@@ -422,7 +425,6 @@
         private System.Windows.Forms.Button btdepar;
         private System.Windows.Forms.TextBox tbDepart;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btcargo;
         private System.Windows.Forms.TextBox tbCargo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -431,5 +433,6 @@
         private System.Windows.Forms.Button bteliminar;
         private System.Windows.Forms.ComboBox cbgenero;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btcodCargo;
     }
 }

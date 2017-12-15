@@ -32,8 +32,8 @@ namespace Colegio_las_Rosas
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            // frm = new Form1(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            //frm.ShowDialog();
+           //frmCrEmpleado frm = new frmCrEmpleado(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+           //frm.ShowDialog();
         }
     }
 }

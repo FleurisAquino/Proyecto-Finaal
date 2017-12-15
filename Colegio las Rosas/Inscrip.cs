@@ -63,5 +63,10 @@ namespace Colegio_las_Rosas
         {
             this.Close();
         }
+
+        private void frmInscrip_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

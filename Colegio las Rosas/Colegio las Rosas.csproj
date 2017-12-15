@@ -74,6 +74,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCrearCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearCargo.Designer.cs">
+      <DependentUpon>frmCrearCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearDepart.Designer.cs">
+      <DependentUpon>frmCrearDepart.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCrEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,12 @@
     <Compile Include="frmRegistros.Designer.cs">
       <DependentUpon>frmRegistros.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVistaDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVistaDepart.Designer.cs">
+      <DependentUpon>frmVistaDepart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inscrip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,11 +136,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VistaCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaCargos.Designer.cs">
+      <DependentUpon>VistaCargos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EMPLEADS.resx">
       <DependentUpon>EMPLEADS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearCargo.resx">
+      <DependentUpon>frmCrearCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearDepart.resx">
+      <DependentUpon>frmCrearDepart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCrEmpleado.resx">
       <DependentUpon>frmCrEmpleado.cs</DependentUpon>
@@ -142,6 +172,9 @@
     <EmbeddedResource Include="frmRegistros.resx">
       <DependentUpon>frmRegistros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVistaDepart.resx">
+      <DependentUpon>frmVistaDepart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inscrip.resx">
       <DependentUpon>Inscrip.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +188,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VistaCargos.resx">
+      <DependentUpon>VistaCargos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
