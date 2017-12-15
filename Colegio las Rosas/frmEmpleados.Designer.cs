@@ -63,7 +63,7 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios ";
             // 
             // dataGridView1
@@ -73,6 +73,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(718, 315);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // button1
             // 
@@ -129,6 +131,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmEmpleados";
             this.Text = "Registros Empleados";
+            this.Load += new System.EventHandler(this.frmEmpleados_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -62,11 +62,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Coneccion.cs" />
+    <Compile Include="EMPLEADS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLEADS.Designer.cs">
+      <DependentUpon>EMPLEADS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrEmpleado.Designer.cs">
+      <DependentUpon>frmCrEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmpleados.cs">
       <SubType>Form</SubType>
@@ -106,8 +118,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EMPLEADS.resx">
+      <DependentUpon>EMPLEADS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrEmpleado.resx">
+      <DependentUpon>frmCrEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmpleados.resx">
       <DependentUpon>frmEmpleados.cs</DependentUpon>

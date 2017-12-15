@@ -84,5 +84,17 @@ namespace Colegio_las_Rosas
             Form frm = new frmCrearLogin();
             frm.Show();
         }
+
+        private void pBempleados_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmEMPLEADS();
+            frm.Show();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmCrEmpleado();
+            frm.Show();
+        }
     }
 }

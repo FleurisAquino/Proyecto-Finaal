@@ -62,7 +62,7 @@ namespace Colegio_las_Rosas
         }
         private void btnentrar_Click(object sender, EventArgs e)
         {//permite introducir el usuario y la contracena en los texbox corespndientes 
-            Login(this.tbcontracena.Text,this.tbusuario.Text);           
+            Login(this.tbusuario.Text, this.tbcontracena.Text);           
         }       
     }
 }

@@ -39,14 +39,14 @@
             // 
             // tbusuario
             // 
-            this.tbusuario.Location = new System.Drawing.Point(132, 312);
+            this.tbusuario.Location = new System.Drawing.Point(132, 262);
             this.tbusuario.Name = "tbusuario";
             this.tbusuario.Size = new System.Drawing.Size(170, 20);
             this.tbusuario.TabIndex = 0;
             // 
             // tbcontracena
             // 
-            this.tbcontracena.Location = new System.Drawing.Point(132, 259);
+            this.tbcontracena.Location = new System.Drawing.Point(132, 312);
             this.tbcontracena.Name = "tbcontracena";
             this.tbcontracena.Size = new System.Drawing.Size(170, 20);
             this.tbcontracena.TabIndex = 1;

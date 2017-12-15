@@ -15,5 +15,25 @@ namespace Colegio_las_Rosas
         {
             InitializeComponent();
         }
+
+        private void frmEmpleados_Load(object sender, EventArgs e)
+        {
+            Coneccion oper = new Coneccion();
+            
+            DataSet ds = oper.MostrarData("select codigo,nombre,apellido,cedula,telefono,direccion,sueldo from empleado");
+
+            dataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            // frm = new Form1(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            //frm.ShowDialog();
+        }
     }
 }

@@ -34,6 +34,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,9 +47,6 @@
             this.pbFinanzas = new System.Windows.Forms.PictureBox();
             this.pbregistro = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -115,8 +115,31 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
             this.usuariosToolStripMenuItem.Text = "1";
+            // 
+            // crearToolStripMenuItem
+            // 
+            this.crearToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuarioToolStripMenuItem,
+            this.empleadoToolStripMenuItem});
+            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.crearToolStripMenuItem.Text = "Crear";
+            // 
+            // usuarioToolStripMenuItem
+            // 
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.usuarioToolStripMenuItem.Text = "Usuario ";
+            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
+            // 
+            // empleadoToolStripMenuItem
+            // 
+            this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadoToolStripMenuItem.Text = "Empleado";
+            this.empleadoToolStripMenuItem.Click += new System.EventHandler(this.empleadoToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -186,6 +209,7 @@
             this.pBempleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBempleados.TabIndex = 2;
             this.pBempleados.TabStop = false;
+            this.pBempleados.Click += new System.EventHandler(this.pBempleados_Click);
             // 
             // pbFinanzas
             // 
@@ -219,28 +243,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // crearToolStripMenuItem
-            // 
-            this.crearToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuarioToolStripMenuItem,
-            this.empleadoToolStripMenuItem});
-            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.crearToolStripMenuItem.Text = "Crear";
-            // 
-            // usuarioToolStripMenuItem
-            // 
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.usuarioToolStripMenuItem.Text = "Usuario ";
-            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
-            // 
-            // empleadoToolStripMenuItem
-            // 
-            this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.empleadoToolStripMenuItem.Text = "Empleado";
             // 
             // frmgeneral
             // 
