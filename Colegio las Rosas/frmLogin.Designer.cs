@@ -37,10 +37,10 @@
             this.btLguardar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chbadm = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbadm = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -111,6 +111,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "////";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -124,25 +125,15 @@
             this.panel1.Size = new System.Drawing.Size(195, 101);
             this.panel1.TabIndex = 8;
             // 
-            // chbadm
+            // checkBox3
             // 
-            this.chbadm.AutoSize = true;
-            this.chbadm.Location = new System.Drawing.Point(3, 16);
-            this.chbadm.Name = "chbadm";
-            this.chbadm.Size = new System.Drawing.Size(89, 17);
-            this.chbadm.TabIndex = 0;
-            this.chbadm.Text = "Administrador";
-            this.chbadm.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 39);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Registros ";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(7, 62);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(81, 17);
+            this.checkBox3.TabIndex = 3;
+            this.checkBox3.Text = "Empleados ";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -154,15 +145,25 @@
             this.checkBox2.Text = "Finanzas";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBox1
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(7, 62);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(81, 17);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Empleados ";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(7, 39);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(73, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "Registros ";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // chbadm
+            // 
+            this.chbadm.AutoSize = true;
+            this.chbadm.Location = new System.Drawing.Point(3, 16);
+            this.chbadm.Name = "chbadm";
+            this.chbadm.Size = new System.Drawing.Size(89, 17);
+            this.chbadm.TabIndex = 0;
+            this.chbadm.Text = "Administrador";
+            this.chbadm.UseVisualStyleBackColor = true;
             // 
             // label4
             // 

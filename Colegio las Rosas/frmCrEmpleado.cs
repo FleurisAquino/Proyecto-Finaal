@@ -13,17 +13,17 @@ namespace Colegio_las_Rosas
     {
         
         public frmCrEmpleado()
+            
 
 
         {
            InitializeComponent();
 
-           // if (codigo != null)
-            //{
-               // buscar(codigo);
-              //}
+           //if (codigo != null)
+           // {
+           //     buscar(codigo);
+           //}
         }
-
         private void btguardar_Click(object sender, EventArgs e)
         {
             Coneccion oper = new Coneccion();
@@ -34,29 +34,29 @@ namespace Colegio_las_Rosas
        {
 
        }
-       // private void buscar(string codigo)
-        //{
-          //  try
+        private void buscar(string codigo)
+        {
+            //try
             //{
-              //  Coneccion oper = new Coneccion();
-               // DataSet ds = oper.MostrarData(" select codigo from empleado WHERE codigo='" + codigo + "' ");
-               // foreach (DataRow fila in ds.Tables[0].Rows)
-               // {
-                  //  if (fila["codigo"] != null) tbCargo.Text = fila["codigo"].ToString();
-               // }
+            //    Coneccion oper = new Coneccion();
+            //    DataSet ds = oper.MostrarData(" select codigo from empleado WHERE codigo='" + codigo + "' ");
+            //    foreach (DataRow fila in ds.Tables[0].Rows)
+            //    {
+            //        if (fila["codigo"] != null) tbCargo.Text = fila["codigo"].ToString();
+            //    }
 
 
-           // }
-           // catch (Exception)
-           // {
+            //}
+            //catch (Exception)
+            //{
 
-                
-           // }
-       // }
-        
+
+            //}
+        }
+
         private void btcargo_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btdepar_Click(object sender, EventArgs e)
@@ -67,13 +67,21 @@ namespace Colegio_las_Rosas
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            ;
+            
         }
 
         private void btcodCargo_Click(object sender, EventArgs e)
         {
-            Form frm = new VistaCargos();
+            //Form frm = new VistaCargos();
+            //frm.Show();
+            Form frm =new  VistaCargos();
             frm.Show();
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

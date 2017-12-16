@@ -11,11 +11,13 @@ namespace Colegio_las_Rosas
 {
     public partial class frmEMPLEADS : Form
     {
+        public string codigo;
         public frmEMPLEADS()
         {
             InitializeComponent();
             pbCemp.Image = Image.FromFile("CreEmp.png");
             pbVempleado.Image = Image.FromFile("MosEmp.png");
+            pbConEmp.Image = Image.FromFile("EmpCar.png");
         }
 
         private void frmEMPLEADOS_Load(object sender, EventArgs e)
@@ -36,8 +38,10 @@ namespace Colegio_las_Rosas
 
         private void pbCemp_Click(object sender, EventArgs e)
         {
-            Form frm = new frmCrEmpleado();
-            frm.Show();
+            frmCrEmpleado frm = new frmCrEmpleado();
+            frm.ShowDialog();
+            //Form frm = new frmCrEmpleado();
+            //frm.Show();
         }
     }
 }

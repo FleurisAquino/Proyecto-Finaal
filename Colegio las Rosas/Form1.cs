@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace Colegio_las_Rosas
 {
@@ -18,6 +19,8 @@ namespace Colegio_las_Rosas
         {
             InitializeComponent();
             pictureBox1.Image = Image.FromFile("CLRlogo.png");
+            tbcontracena.PasswordChar = '*';
+            tbcontracena.MaxLength = 10;
         }
         SQLiteConnection cnx = new SQLiteConnection(@"Data Source = C:\\SQLite\\LasRosas.db; Vercion=3;");
 
@@ -38,9 +41,10 @@ namespace Colegio_las_Rosas
                 
 
                 {//Oculta la tabla de login y abre la interfas pricipal 
-                    this.Hide();
+                    
                     Form frm = new frmgeneral();
                     frm.Show();
+                    this.Hide();
                 }
                 else
                 {//mensaje de error si el usuario o contracena es incorrecto
@@ -63,6 +67,8 @@ namespace Colegio_las_Rosas
         private void btnentrar_Click(object sender, EventArgs e)
         {//permite introducir el usuario y la contracena en los texbox corespndientes 
             Login(this.tbusuario.Text, this.tbcontracena.Text);           
-        }       
+        }
+
+       
     }
 }

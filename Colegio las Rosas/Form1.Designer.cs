@@ -39,16 +39,18 @@
             // 
             // tbusuario
             // 
+            this.tbusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbusuario.Location = new System.Drawing.Point(132, 262);
             this.tbusuario.Name = "tbusuario";
-            this.tbusuario.Size = new System.Drawing.Size(170, 20);
+            this.tbusuario.Size = new System.Drawing.Size(170, 26);
             this.tbusuario.TabIndex = 0;
             // 
             // tbcontracena
             // 
+            this.tbcontracena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbcontracena.Location = new System.Drawing.Point(132, 312);
             this.tbcontracena.Name = "tbcontracena";
-            this.tbcontracena.Size = new System.Drawing.Size(170, 20);
+            this.tbcontracena.Size = new System.Drawing.Size(170, 26);
             this.tbcontracena.TabIndex = 1;
             // 
             // btnentrar
@@ -66,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(32, 259);
+            this.label1.Location = new System.Drawing.Point(32, 266);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 3;
@@ -77,7 +79,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Adobe Gothic Std B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(32, 312);
+            this.label2.Location = new System.Drawing.Point(32, 316);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 20);
             this.label2.TabIndex = 4;

@@ -88,6 +88,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(626, 179);
             this.panel4.TabIndex = 7;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // cbgenero
             // 

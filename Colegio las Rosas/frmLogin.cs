@@ -26,6 +26,12 @@ namespace Colegio_las_Rosas
             Coneccion oper = new Coneccion();
             oper.insertar(" INSERT INTO login (clave,usuario,fkempleado)VALUES('" + tbLcontracena.Text.ToString() + "','" + tbLusuario.Text.ToString() + "','" + tbLcodEmp.Text.ToString() + "')");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmEmpleados();
+            frm.Show();
+        }
     }
     
            

@@ -60,12 +60,13 @@ namespace Colegio_las_Rosas
             try
 
             {
-                this.Close();
+                Application.Exit();               
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Cerrar La Sesion" + ex.ToString());
             }
+            
 
         }
 
@@ -96,7 +97,12 @@ namespace Colegio_las_Rosas
             Form frm = new frmCrEmpleado();
             frm.Show();
         }
-  
+
+        private void calificacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmVistaCalificaciones();
+            frm.Show();
+        }
     }
 
        

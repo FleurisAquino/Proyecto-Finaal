@@ -31,31 +31,38 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btcerrarsesion = new System.Windows.Forms.Button();
             this.btsalir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pbregistro = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbFinanzas = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pBempleados = new System.Windows.Forms.PictureBox();
-            this.pbFinanzas = new System.Windows.Forms.PictureBox();
-            this.pbregistro = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.calificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbregistro)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFinanzas)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBempleados)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFinanzas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbregistro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,12 +99,23 @@
             this.btsalir.UseVisualStyleBackColor = true;
             this.btsalir.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(2, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 123);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivosToolStripMenuItem,
-            this.crearToolStripMenuItem});
+            this.crearToolStripMenuItem,
+            this.verToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(742, 24);
@@ -115,8 +133,8 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
-            this.usuariosToolStripMenuItem.Text = "1";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.usuariosToolStripMenuItem.Text = "Editar Perfil";
             // 
             // crearToolStripMenuItem
             // 
@@ -137,9 +155,52 @@
             // empleadoToolStripMenuItem
             // 
             this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.empleadoToolStripMenuItem.Text = "Empleado";
             this.empleadoToolStripMenuItem.Click += new System.EventHandler(this.empleadoToolStripMenuItem_Click);
+            // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empleadosToolStripMenuItem,
+            this.departamentosToolStripMenuItem,
+            this.cargosToolStripMenuItem,
+            this.alumnosToolStripMenuItem,
+            this.usuariosToolStripMenuItem1,
+            this.calificacionesToolStripMenuItem});
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.verToolStripMenuItem.Text = "Ver";
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados ";
+            // 
+            // departamentosToolStripMenuItem
+            // 
+            this.departamentosToolStripMenuItem.Name = "departamentosToolStripMenuItem";
+            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.departamentosToolStripMenuItem.Text = "Departamentos";
+            // 
+            // cargosToolStripMenuItem
+            // 
+            this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
+            this.cargosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.cargosToolStripMenuItem.Text = "Cargos ";
+            // 
+            // alumnosToolStripMenuItem
+            // 
+            this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.alumnosToolStripMenuItem.Text = "Alumnos ";
+            // 
+            // usuariosToolStripMenuItem1
+            // 
+            this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
+            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
+            this.usuariosToolStripMenuItem1.Text = "Usuarios ";
             // 
             // panel2
             // 
@@ -162,6 +223,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "REGISTROS";
             // 
+            // pbregistro
+            // 
+            this.pbregistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbregistro.Location = new System.Drawing.Point(26, 3);
+            this.pbregistro.Name = "pbregistro";
+            this.pbregistro.Size = new System.Drawing.Size(148, 141);
+            this.pbregistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbregistro.TabIndex = 0;
+            this.pbregistro.TabStop = false;
+            this.pbregistro.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pbregistro.MouseMove += new System.Windows.Forms.MouseEventHandler(this.entrar);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label2);
@@ -180,6 +253,17 @@
             this.label2.Size = new System.Drawing.Size(111, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "FINANZAS";
+            // 
+            // pbFinanzas
+            // 
+            this.pbFinanzas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbFinanzas.Location = new System.Drawing.Point(28, 3);
+            this.pbFinanzas.Name = "pbFinanzas";
+            this.pbFinanzas.Size = new System.Drawing.Size(148, 141);
+            this.pbFinanzas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFinanzas.TabIndex = 1;
+            this.pbFinanzas.TabStop = false;
+            this.pbFinanzas.Click += new System.EventHandler(this.pbFinanzas_Click);
             // 
             // panel5
             // 
@@ -211,38 +295,12 @@
             this.pBempleados.TabStop = false;
             this.pBempleados.Click += new System.EventHandler(this.pBempleados_Click);
             // 
-            // pbFinanzas
+            // calificacionesToolStripMenuItem
             // 
-            this.pbFinanzas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbFinanzas.Location = new System.Drawing.Point(28, 3);
-            this.pbFinanzas.Name = "pbFinanzas";
-            this.pbFinanzas.Size = new System.Drawing.Size(148, 141);
-            this.pbFinanzas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFinanzas.TabIndex = 1;
-            this.pbFinanzas.TabStop = false;
-            this.pbFinanzas.Click += new System.EventHandler(this.pbFinanzas_Click);
-            // 
-            // pbregistro
-            // 
-            this.pbregistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbregistro.Location = new System.Drawing.Point(26, 3);
-            this.pbregistro.Name = "pbregistro";
-            this.pbregistro.Size = new System.Drawing.Size(148, 141);
-            this.pbregistro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbregistro.TabIndex = 0;
-            this.pbregistro.TabStop = false;
-            this.pbregistro.Click += new System.EventHandler(this.pictureBox2_Click);
-            this.pbregistro.MouseMove += new System.Windows.Forms.MouseEventHandler(this.entrar);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(2, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.calificacionesToolStripMenuItem.Name = "calificacionesToolStripMenuItem";
+            this.calificacionesToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.calificacionesToolStripMenuItem.Text = "Calificaciones ";
+            this.calificacionesToolStripMenuItem.Click += new System.EventHandler(this.calificacionesToolStripMenuItem_Click);
             // 
             // frmgeneral
             // 
@@ -260,18 +318,18 @@
             this.Load += new System.EventHandler(this.frmgeneral_Load);
             this.Click += new System.EventHandler(this.pictureBox1_Click);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbregistro)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFinanzas)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBempleados)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFinanzas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbregistro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,5 +356,12 @@
         private System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem departamentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem calificacionesToolStripMenuItem;
     }
 }
