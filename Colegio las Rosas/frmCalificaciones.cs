@@ -30,7 +30,7 @@ namespace Colegio_las_Rosas
         private void button5_Click(object sender, EventArgs e)
         {
             Coneccion oper = new Coneccion();
-            oper.insertar(" INSERT INTO calificaciones (fecha_calif,prueva,paricipacion,asignacion,produccion,valores,total_cali,fkcod_curso,fkcod_asig)VALUES('" + dtFcali.Text + "','" + tbexamen.Text.ToString() + "','" + tbparti.Text.ToString() + "','" + tbasig.Text.ToString() + "','" + tbparti.Text.ToString() + "','" + tbvalores.Text.ToString() + "','" +tbtotal.Text.ToString() + "','" + tbCur.Text.ToString() + "','" + tbasign.Text.ToString() + "')");
+            oper.insertar(" INSERT INTO calificaciones (fecha_calif,prueva,paricipacion,asignacion,produccion,valores,total_cali,fkcod_curso,fkcod_asig)VALUES('" + dtFcali.Text + "','" + tbexamen.Text.ToString() + "','" + tbparti.Text.ToString() + "','" + tbasig.Text.ToString() + "','" + tbparti.Text.ToString() + "','" + tbvalores.Text.ToString() + "','" +tbtotal.Text.ToString() + "','" + tbCur.Text.ToString() + "','" + tbasignatura.Text.ToString() + "')");
         }
 
         private void frmCalificaciones_Load(object sender, EventArgs e)
@@ -41,6 +41,12 @@ namespace Colegio_las_Rosas
         private void button3_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Coneccion oper = new Coneccion();
+            oper.insertar("update calificaciones set fecha_calif='" + dtFcali.Text.ToString() +"',prueva='"+tbexamen.Text.ToString()+"',paricipacion='"+tbparti.Text.ToString()+"',asignacion='"+tbasig.Text.ToString()+"',produccion='"+tbprod.Text.ToString()+"',valores='"+tbvalores.Text.ToString()+"',total_cali='"+tbtotal.Text.ToString()+"',fkcod_curso='"+tbCur.Text.ToString()+"',fkcod_asig='"+tbasignatura.Text.ToString()+"'where codigo ='"+textBox1.Text.ToString()+"'");
         }
     }
     

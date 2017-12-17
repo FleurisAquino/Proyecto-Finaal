@@ -61,6 +61,7 @@
             this.btguardar = new System.Windows.Forms.Button();
             this.bteditar = new System.Windows.Forms.Button();
             this.bteliminar = new System.Windows.Forms.Button();
+            this.tbcodigo = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -366,21 +367,31 @@
             this.bteditar.TabIndex = 12;
             this.bteditar.Text = "Editar";
             this.bteditar.UseVisualStyleBackColor = true;
+            this.bteditar.Click += new System.EventHandler(this.bteditar_Click);
             // 
             // bteliminar
             // 
-            this.bteliminar.Location = new System.Drawing.Point(429, 334);
+            this.bteliminar.Location = new System.Drawing.Point(497, 336);
             this.bteliminar.Name = "bteliminar";
             this.bteliminar.Size = new System.Drawing.Size(110, 28);
             this.bteliminar.TabIndex = 13;
             this.bteliminar.Text = "Eliminar";
             this.bteliminar.UseVisualStyleBackColor = true;
+            this.bteliminar.Click += new System.EventHandler(this.bteliminar_Click);
+            // 
+            // tbcodigo
+            // 
+            this.tbcodigo.Location = new System.Drawing.Point(392, 339);
+            this.tbcodigo.Name = "tbcodigo";
+            this.tbcodigo.Size = new System.Drawing.Size(51, 20);
+            this.tbcodigo.TabIndex = 26;
             // 
             // frmCrEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 376);
+            this.Controls.Add(this.tbcodigo);
             this.Controls.Add(this.bteliminar);
             this.Controls.Add(this.bteditar);
             this.Controls.Add(this.btguardar);
@@ -435,5 +446,6 @@
         private System.Windows.Forms.ComboBox cbgenero;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btcodCargo;
+        private System.Windows.Forms.TextBox tbcodigo;
     }
 }

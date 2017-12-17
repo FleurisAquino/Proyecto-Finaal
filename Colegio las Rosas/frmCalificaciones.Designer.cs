@@ -45,7 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbCur = new System.Windows.Forms.TextBox();
-            this.tbasign = new System.Windows.Forms.TextBox();
+            this.tbasignatura = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -59,6 +59,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -218,12 +219,12 @@
             this.tbCur.Size = new System.Drawing.Size(53, 20);
             this.tbCur.TabIndex = 14;
             // 
-            // tbasign
+            // tbasignatura
             // 
-            this.tbasign.Location = new System.Drawing.Point(68, 13);
-            this.tbasign.Name = "tbasign";
-            this.tbasign.Size = new System.Drawing.Size(53, 20);
-            this.tbasign.TabIndex = 15;
+            this.tbasignatura.Location = new System.Drawing.Point(68, 13);
+            this.tbasignatura.Name = "tbasignatura";
+            this.tbasignatura.Size = new System.Drawing.Size(53, 20);
+            this.tbasignatura.TabIndex = 15;
             // 
             // button1
             // 
@@ -247,7 +248,7 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.tbasign);
+            this.panel2.Controls.Add(this.tbasignatura);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(243, 100);
             this.panel2.Name = "panel2";
@@ -338,6 +339,7 @@
             this.button6.TabIndex = 29;
             this.button6.Text = "Modificar";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -348,11 +350,19 @@
             this.button7.Text = "Eliminar";
             this.button7.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(64, 20);
+            this.textBox1.TabIndex = 17;
+            // 
             // frmCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 376);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -384,7 +394,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbCur;
-        private System.Windows.Forms.TextBox tbasign;
+        private System.Windows.Forms.TextBox tbasignatura;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel2;
@@ -411,5 +421,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

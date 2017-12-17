@@ -83,5 +83,19 @@ namespace Colegio_las_Rosas
         {
 
         }
+
+        private void bteditar_Click(object sender, EventArgs e)
+        {
+            Coneccion cnx = new Coneccion();
+            cnx.insertar("update empleado set nombre='"+tbnombre.Text.ToString()+"',apellido='"+tbapellido.Text.ToString()+"',fechaNacimiento='"+dtNacimiento.Text.ToString()+"',sexo='"+cbgenero.Text.ToString()+"',fechaingreso='"+dtIngreso.Text.ToString()+ "',telefono='"+tbtelefono.Text.ToString()+ "',celular='"+tbcelular.Text.ToString()+ "',cedula='"+tbcedula+ "',direccion='"+tbdireccion.Text.ToString()+ "',fkCodCargo='"+tbCargo.Text.ToString()+ "',fkCodDepart='"+tbDepart.Text.ToString()+ "',sueldo='"+tbsueldo.Text.ToString()+"'where codigo='"+tbcodigo.Text.ToString()+"'");
+        }
+
+        private void bteliminar_Click(object sender, EventArgs e)
+        {
+            Coneccion cnx = new Coneccion();
+            cnx.insertar("delete '*' from empleado where codigo='"+tbcodigo.Text.ToString()+"'");
+        }
     }
 }
+
+        
